@@ -18,6 +18,7 @@ BuildRequires:	pkgconfig(TelepathyQt5)
 BuildRequires:	pkgconfig(sqlite3)
 BuildRequires:	pkgconfig(mission-control-plugins)
 BuildRequires:	pkgconfig(ofono-qt)
+BuildRequires:	pkgconfig(protobuf)
 BuildRequires:	%{_lib}phonenumber-devel
 
 %description
