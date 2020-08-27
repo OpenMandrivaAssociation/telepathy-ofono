@@ -8,6 +8,7 @@ Source0:	https://github.com/TelepathyIM/telepathy-ofono/archive/staging/%{name}-
 Patch0:		telepathy-ofono-no-underlinking.patch
 License:	LGPLv3
 Group:		Networking/Instant messaging
+BuildRequires:	cmake(ECM)
 BuildRequires:	pkgconfig(TelepathyQt5)
 BuildRequires:	pkgconfig(sqlite3)
 BuildRequires:	pkgconfig(mission-control-plugins)
