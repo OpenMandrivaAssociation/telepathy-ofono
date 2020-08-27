@@ -13,6 +13,7 @@ BuildRequires:	pkgconfig(TelepathyQt5)
 BuildRequires:	pkgconfig(sqlite3)
 BuildRequires:	pkgconfig(mission-control-plugins)
 BuildRequires:	pkgconfig(ofono-qt)
+BuildRequires:	%{_lib}phonenumber-devel
 
 %description
 ofono telephone services for telepathy
