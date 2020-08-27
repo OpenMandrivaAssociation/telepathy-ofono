@@ -9,6 +9,10 @@ Patch0:		telepathy-ofono-no-underlinking.patch
 License:	LGPLv3
 Group:		Networking/Instant messaging
 BuildRequires:	cmake(ECM)
+BuildRequires:	cmake(Qt5Core)
+BuildRequires:	cmake(Qt5DBus)
+BuildRequires:	cmake(Qt5Network)
+BuildRequires:	cmake(Qt5Sql)
 BuildRequires:	pkgconfig(TelepathyQt5)
 BuildRequires:	pkgconfig(sqlite3)
 BuildRequires:	pkgconfig(mission-control-plugins)
