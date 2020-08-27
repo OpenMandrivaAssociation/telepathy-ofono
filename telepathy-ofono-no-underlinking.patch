@@ -1,0 +1,11 @@
+diff -up telepathy-ofono-staging/mc-plugin/CMakeLists.txt.omv~ telepathy-ofono-staging/mc-plugin/CMakeLists.txt
+--- telepathy-ofono-staging/mc-plugin/CMakeLists.txt.omv~	2020-08-27 20:18:55.953270246 +0200
++++ telepathy-ofono-staging/mc-plugin/CMakeLists.txt	2020-08-27 20:20:48.481549417 +0200
+@@ -24,6 +24,6 @@ string(REPLACE "\n" "" MC_PLUGINS_DIR ${
+ include_directories(${MC_PLUGINS_INCLUDE_DIRS})
+ add_library(${MCP_ACCOUNT_MANAGER_NAME} SHARED ${MC_PLUGIN_SRC} ${MC_PLUGIN_HDRS})
+ set_target_properties(${MCP_ACCOUNT_MANAGER_NAME} PROPERTIES PREFIX "")
+-target_link_libraries(${MCP_ACCOUNT_MANAGER_NAME} ${MC_PLUGINS_LIBRARIES})
++target_link_libraries(${MCP_ACCOUNT_MANAGER_NAME} ${MC_PLUGINS_LIBRARIES} glib-2.0 gobject-2.0 gio-2.0)
+ 
+ install(TARGETS ${MCP_ACCOUNT_MANAGER_NAME} DESTINATION ${MC_PLUGINS_DIR})
