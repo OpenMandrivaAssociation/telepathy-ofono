@@ -1,11 +1,10 @@
-%define snapshot 20200827
+%define snapshot 20210417
 
 Summary:	ofono telephone services for telepathy
 Name:		telepathy-ofono
 Version:	0.1
 Release:	%{?snapshot:0.%{snapshot}.}1
 Source0:	https://github.com/TelepathyIM/telepathy-ofono/archive/staging/%{name}-%{snapshot}.tar.gz
-Patch0:		telepathy-ofono-no-underlinking.patch
 License:	LGPLv3
 Group:		Networking/Instant messaging
 BuildRequires:	cmake(ECM)
